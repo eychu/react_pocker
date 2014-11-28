@@ -6,15 +6,15 @@
 
 var React = require('react/addons');
 var Router = require('react-router');
-var RouteHandler = Router.RouteHandler;
+var Link = Router.Link;
 
-
-var MainPage = React.createClass({
+var LoginPage = React.createClass({
   render: function() {
     return <div>
-      <RouteHandler />
+      <Link to='chat'>chat link</Link>
     </div>
   }
 });
 
-module.exports = MainPage;
+module.exports = LoginPage;
+

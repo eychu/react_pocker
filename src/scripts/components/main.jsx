@@ -9,6 +9,7 @@ require('../../styles/main.css');
 
 var MainPage = require('./MainPage.jsx');
 var ChatPage = require('./ChatPage.jsx');
+var LoginPage = require('./LoginPage.jsx');
 var React = require('react');
 var Router = require('react-router');
 var { Route, DefaultRoute } = Router;
@@ -16,7 +17,8 @@ var { Route, DefaultRoute } = Router;
 
 var routes = (
     <Route handler={MainPage} >
-        <DefaultRoute handler={MainPage} />
+        <DefaultRoute handler={LoginPage} />
+        <Route name="login" handler={LoginPage} />
         <Route name="chat" handler={ChatPage} />
     </Route>
 );
