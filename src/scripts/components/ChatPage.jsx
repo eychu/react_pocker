@@ -6,14 +6,14 @@
 
 var React = require('react/addons');
 
-var RoomPage = React.createClass({
+var ChatPage = React.createClass({
   render: function() {
     return (
       <div className='main'>
-          <h1>room page</h1>
+         CHAT PAGE
       </div>
     );
   }
 });
 
-module.exports = RoomPage;
+module.exports = ChatPage;
